@@ -1,0 +1,62 @@
+sing System.Collections.Generic;
+using UnityEngine;
+
+public class Gamemanager : MonoBehaviour
+{
+    public int Count = 50;
+
+    public List<string> nombres = new List<string>() { "A", "B", "C" };
+
+    //public bool IsValid = false;
+
+    void Start()
+    {
+        //Debug.Log(nombres[nombres.Count - 1]);
+        int i = 0;
+
+        while (i <= nombres.Count)
+        {
+
+            Debug.Log(nombres[i]);
+            if(nombres[i] == "C")
+            {
+                Debug.Log("El elemto C se encuentra en la posicion " + i);
+            }
+
+
+
+
+         }
+        {
+            if (i % 2 == 0)
+            {
+                Debug.Log("El valor" + i + " es par ");
+            }
+            else
+            {
+                Debug.Log("El Valor" + i + "Es impar");
+            }
+            //Debug.Log("El elemento en la posicion " + i + "Tiene de valor" + nombres[i]);
+            //i++;
+        }
+        while (Count > 0)
+        {
+            Debug.Log("Cuenta Regresiva :" + Count);
+            Count--;
+        }
+        do
+        {
+            Debug.Log("cuenta regresiva :" + Count);
+            Count--;
+        }
+        while (Count > 0);
+        //while (IsValid == false) ;
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
