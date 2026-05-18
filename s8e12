@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        string[] objetos = { "Pocion", "Espada", "Llave", "Escudo" };
+
+        foreach (string objeto in objetos)
+        {
+            Debug.Log(objeto);
+
+            if (objeto == "Llave")
+            {
+                Debug.Log("Llave encontrada");
+                break;
+            }
+        }
+    }
+}
