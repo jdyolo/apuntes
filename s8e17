@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        string[] inventario = { "Espada", "Pocion", "Arco" };
+
+        foreach (string item in inventario)
+        {
+            MostrarItem(item);
+        }
+    }
+
+    void MostrarItem(string item)
+    {
+        Debug.Log("Item: " + item);
+    }
+}
