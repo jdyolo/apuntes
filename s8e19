@@ -1,0 +1,25 @@
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        string[] items = { "Madera", "Piedra", "Diamante", "Hierro" };
+
+        foreach (string item in items)
+        {
+            Debug.Log(item);
+
+            if (EsRaro(item))
+            {
+                Debug.Log("Item raro encontrado");
+                break;
+            }
+        }
+    }
+
+    bool EsRaro(string item)
+    {
+        return item == "Diamante";
+    }
+}
