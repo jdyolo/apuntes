@@ -1,0 +1,27 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        List<string> enemigos = new List<string>()
+        {
+            "Zombie",
+            "Derrotado",
+            "Esqueleto",
+            "Derrotado",
+            "Orco"
+        };
+
+        foreach (string enemigo in enemigos)
+        {
+            if (enemigo == "Derrotado")
+            {
+                continue;
+            }
+
+            Debug.Log(enemigo);
+        }
+    }
+}
