@@ -1,0 +1,27 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        List<string> enemigos = new List<string>()
+        {
+            "Slime",
+            "Orco",
+            "Boss",
+            "Dragon"
+        };
+
+        foreach (string enemigo in enemigos)
+        {
+            Debug.Log(enemigo);
+
+            if (enemigo == "Boss")
+            {
+                Debug.Log("Jefe final encontrado");
+                break;
+            }
+        }
+    }
+}
