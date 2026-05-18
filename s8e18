@@ -1,0 +1,25 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class gamemanager : MonoBehaviour
+{
+    void Start()
+    {
+        List<int> vidas = new List<int>() { 100, 0, 50, 0, 80 };
+
+        foreach (int vida in vidas)
+        {
+            if (!EstaVivo(vida))
+            {
+                continue;
+            }
+
+            Debug.Log("Enemigo vivo con vida: " + vida);
+        }
+    }
+
+    bool EstaVivo(int vida)
+    {
+        return vida > 0;
+    }
+}
