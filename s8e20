@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    void Start()
+    {
+        for (int fila = 0; fila < 8; fila++)
+        {
+            string linea = "";
+
+            for (int columna = 0; columna < 8; columna++)
+            {
+                if ((fila + columna) % 2 == 0)
+                {
+                    linea += "⬜";
+                }
+                else
+                {
+                    linea += "⬛";
+                }
+            }
+
+            Debug.Log(linea);
+        }
+    }
+}
